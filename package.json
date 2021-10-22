@@ -7,10 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "nodemon server.js",
     "client-install": "npm install --prefix agrifin_ui",
-    "client": "cd ../ && npm start --prefix agrifin_ui",
-    "start": "concurrently \"npm run server\" \"npm run client\""
+    "client": "cd ../ && SET PORT=3001 && npm start --prefix agrifin_ui",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
-  "proxy": "http://localhost:8080/",
+  "proxy": "http://localhost:8081/",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/abponder/agrifin_api.git"
