@@ -12,7 +12,7 @@ const connection = mysql.createConnection({
   password:process.env.password
 });
 
-app.get('/', (req, res) => {
+app.get('/api', (req, res) => {
   // simple query
 connection.query(
   'SELECT * FROM t_testdata;',
